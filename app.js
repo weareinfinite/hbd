@@ -40,7 +40,7 @@ let height = window.innerHeight;
 let textSize = 0;
 let textCenter = 0;
 const letters = [];
-const prompt = ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"]
+const prompt = utils.getSplitedText()
 let runPrompt = true;
 
 const resizePage = () => {
