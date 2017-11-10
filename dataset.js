@@ -1,11 +1,20 @@
 var bds = [
     {
+        event:"birthday",
         date:"09-11", "peoples": [
             {
                 name:"Vimal"
             },
             {
                 name: "Arun"
+            }
+        ]
+    },
+    {
+        event:"birthday",
+        date:"17-11", "peoples": [
+            {
+                name:"Amrithlal"
             }
         ]
     }

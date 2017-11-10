@@ -2,6 +2,8 @@
 
 var utils = {
 
+    smilies: ['☺️','♡','❤','✌','☕','☻','☀️','⛳','✨'],
+
     getBirthdayPeoples : ()=> {
 
         let date = new Date();
@@ -25,7 +27,7 @@ var utils = {
     },
     randomWish : () => {
 
-        let w =[`Happy B'Day ❤ `,`Many Many Happy   Return Of the day  `]
+        let w =[`Happy B'Day 💓 `,`Many Many Happy   Return Of the day  `]
 
         return utils.pickRandom(w);
 
@@ -45,7 +47,7 @@ var utils = {
             return utils.randomWish().split('').concat(utils.getBirthdayPeoples().split(''))
         }
         else {
-            return utils.pickRandom(quotes).split('')
+            return utils.pickRandom(quotes).split('').concat([utils.pickRandom(utils.smilies)])
         }
 
     }
